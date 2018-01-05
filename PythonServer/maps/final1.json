@@ -1,0 +1,111 @@
+{
+    "": "map size",
+    "width": 20.0,
+    "height": 20.0,
+    "monitor_width": 960,
+    "monitor_height": 960,
+
+    "": "game config",
+    "max_cycle": 600,
+    "random_flag" : 0,
+
+    "":"medics",
+    "medics": {
+        "number": 4,
+        "death_score": 30,
+        "radius": 0.5,
+        "health": 50,
+        "max_health": 100,
+        "max_turn_angle": 30,
+        "max_fire_angle": 10,
+        "max_move_distance": 0.7,
+        "healing_remaining_time": 0,
+        "laser_max_count": 4,
+        "laser_range": 3,
+        "laser_count": 1,
+        "time_to_reload" : 30,
+        "reload_time" : 30,
+        "laser_damage": 30
+    },
+
+    "": "HealPack max healing",
+    "healpack": {
+        "max_healing": 25
+    },
+
+    "":"patients",
+    "patients": {
+        "number": 13,
+        "healing_duration": 5,
+        "radius": 0.5,
+        "capturable": false,
+        "heal_score": 20,
+        "heal_score_capturable": 10
+    },
+
+    "": "walls",
+    "": "note: the first 4 walls are map bounds!!",
+    "walls": [
+        [{"x": 0.0, "y": 0.0}, {"x": 20.0, "y": 0.0}],
+        [{"x": 0.0, "y": 0.0}, {"x": 0.0, "y": 20.0}],
+        [{"x": 20.0, "y": 0.0}, {"x": 20.0, "y": 20.0}],
+        [{"x": 0.0, "y": 20.0}, {"x": 20.0, "y": 20.0}],
+
+        [{"x": 2.0, "y": 2.0}, {"x": 18.0, "y": 2.0}],
+        [{"x": 2.0, "y": 18.0}, {"x": 18.0, "y": 18.0}],
+        [{"x": 18.0, "y": 2.0}, {"x": 18.0, "y": 18.0}],
+        [{"x": 2.0, "y": 4.0}, {"x": 2.0, "y": 16.0}],
+
+        [{"x": 2.0, "y": 4.0}, {"x": 16.0, "y": 4.0}],
+        [{"x": 2.0, "y": 16.0}, {"x": 16.0, "y": 16.0}],
+        [{"x": 16.0, "y": 6.0}, {"x": 16.0, "y": 14.0}],
+
+        [{"x": 4.0, "y": 6.0}, {"x": 14.0, "y": 6.0}],
+        [{"x": 4.0, "y": 8.5}, {"x": 14.0, "y": 8.5}],
+        [{"x": 4.0, "y": 14.0}, {"x": 14.0, "y": 14.0}],
+        [{"x": 4.0, "y": 11.5}, {"x": 14.0, "y": 11.5}],
+        [{"x": 4.0, "y": 6.0}, {"x": 4.0, "y": 8.5}],
+        [{"x": 4.0, "y": 14.0}, {"x": 4.0, "y": 11.5}],
+        [{"x": 14.0, "y": 8.5}, {"x": 14.0, "y": 11.5}]
+    ],
+
+    "": "powerups positions and types",
+    "powerups": {
+        "chance": 90,
+        "positions": [
+            {"x": 5.0, "y": 6.75},
+            {"x": 6.5, "y": 6.75},
+            {"x": 5.0, "y": 7.75},
+            {"x": 6.5, "y": 7.75},
+
+            {"x": 5.0, "y": 12.25},
+            {"x": 6.5, "y": 12.25},
+            {"x": 5.0, "y": 13.25},
+            {"x": 6.5, "y": 13.25}
+        ],
+        "appearance_time": 80
+    },
+
+    "": "position of medics",
+    "medics_position": {
+        "DixieKong": [
+            {"x": 8.5, "y": 1.0, "angle": 180},
+            {"x": 11.5, "y": 1.0, "angle": 0}
+        ],
+        "DiddyKong": [
+            {"x": 8.5, "y": 19.0, "angle": 180},
+            {"x": 11.5, "y": 19.0, "angle": 0}
+        ]
+    },
+
+    "": "position of patients",
+    "patients_position": [
+        {"x": 1, "y": 10, "capable": true},
+        {"x": 19, "y": 10, "capable": true},
+        {"x": 12.5, "y": 10, "capable": true},
+
+        {"x": 17, "y": 10, "capable": false},
+        {"x": 8.0, "y": 7.25, "capable": false},
+        {"x": 8.0, "y": 12.75, "capable": false}
+    ]
+}
